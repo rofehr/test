@@ -7,7 +7,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update \
  && apt-get dist-upgrade -y \
  && apt-get install -y \
-    make git-core software-properties-common locales locales-all
+    make git-core software-properties-common locales locales-all nano
 
 # MLD Pakete holen
 RUN git clone http://minidvblinux.de/git-5/MLD.git MLD \
